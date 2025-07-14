@@ -11,13 +11,13 @@
 		401682622E24572D009F2036 /* AppCore in Frameworks */ = {isa = PBXBuildFile; productRef = 401682612E24572D009F2036 /* AppCore */; };
 		406463162E247E2B00B459A0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406463152E247E2B00B459A0 /* XCTest.framework */; platformFilter = ios; };
 		407EEE022E24827E0013402C /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		407EEE032E24827E0013402C /* WeatherServiceClient in Frameworks */ = {isa = PBXBuildFile; productRef = A10000020000000000000002 /* WeatherServiceClient */; };
-		A10000020000000000000001 /* WeatherServiceClient in Frameworks */ = {isa = PBXBuildFile; productRef = A10000020000000000000002 /* WeatherServiceClient */; };
-		A10000030000000000000001 /* OpenWeatherMapClient in Frameworks */ = {isa = PBXBuildFile; productRef = A10000030000000000000002 /* OpenWeatherMapClient */; };
-		A10000040000000000000001 /* OpenMeteoClient in Frameworks */ = {isa = PBXBuildFile; productRef = A10000040000000000000002 /* OpenMeteoClient */; };
-		A10000050000000000000001 /* LocationSearchClient in Frameworks */ = {isa = PBXBuildFile; productRef = A10000050000000000000002 /* LocationSearchClient */; };
-		A10000060000000000000001 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = A10000060000000000000002 /* UIComponents */; };
-		A10000070000000000000001 /* Features in Frameworks */ = {isa = PBXBuildFile; productRef = A10000070000000000000002 /* Features */; };
+		407EEE122E24865D0013402C /* AppCore in Frameworks */ = {isa = PBXBuildFile; productRef = 407EEE112E24865D0013402C /* AppCore */; };
+		407EEE152E24866E0013402C /* Features in Frameworks */ = {isa = PBXBuildFile; productRef = 407EEE142E24866E0013402C /* Features */; };
+		407EEE182E2486790013402C /* LocationSearchClient in Frameworks */ = {isa = PBXBuildFile; productRef = 407EEE172E2486790013402C /* LocationSearchClient */; };
+		407EEE1B2E2486820013402C /* OpenMeteoClient in Frameworks */ = {isa = PBXBuildFile; productRef = 407EEE1A2E2486820013402C /* OpenMeteoClient */; };
+		407EEE1E2E2486910013402C /* OpenWeatherMapClient in Frameworks */ = {isa = PBXBuildFile; productRef = 407EEE1D2E2486910013402C /* OpenWeatherMapClient */; };
+		407EEE212E24869E0013402C /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 407EEE202E24869E0013402C /* UIComponents */; };
+		407EEE242E2486A90013402C /* WeatherServiceClient in Frameworks */ = {isa = PBXBuildFile; productRef = 407EEE232E2486A90013402C /* WeatherServiceClient */; };
 		A10000080000000000000001 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A10000080000000000000002 /* ComposableArchitecture */; };
 		A10000090000000000000001 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000090000000000000003 /* WeatherApp.swift */; };
 		A10000100000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000100000000000000003 /* Assets.xcassets */; };
@@ -57,7 +57,6 @@
 			files = (
 				406463162E247E2B00B459A0 /* XCTest.framework in Frameworks */,
 				407EEE022E24827E0013402C /* (null) in Frameworks */,
-				407EEE032E24827E0013402C /* WeatherServiceClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,13 +65,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				401682622E24572D009F2036 /* AppCore in Frameworks */,
-				A10000020000000000000001 /* WeatherServiceClient in Frameworks */,
+				407EEE122E24865D0013402C /* AppCore in Frameworks */,
+				407EEE182E2486790013402C /* LocationSearchClient in Frameworks */,
+				407EEE1E2E2486910013402C /* OpenWeatherMapClient in Frameworks */,
+				407EEE1B2E2486820013402C /* OpenMeteoClient in Frameworks */,
+				407EEE152E24866E0013402C /* Features in Frameworks */,
+				407EEE242E2486A90013402C /* WeatherServiceClient in Frameworks */,
+				407EEE212E24869E0013402C /* UIComponents in Frameworks */,
 				4016825F2E245656009F2036 /* AppCore in Frameworks */,
-				A10000030000000000000001 /* OpenWeatherMapClient in Frameworks */,
-				A10000040000000000000001 /* OpenMeteoClient in Frameworks */,
-				A10000050000000000000001 /* LocationSearchClient in Frameworks */,
-				A10000060000000000000001 /* UIComponents in Frameworks */,
-				A10000070000000000000001 /* Features in Frameworks */,
 				A10000080000000000000001 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,7 +148,6 @@
 			);
 			name = OsapiensWeatherAppTests;
 			packageProductDependencies = (
-				A10000020000000000000002 /* WeatherServiceClient */,
 			);
 			productName = OsapiensWeatherAppTests;
 			productReference = 4064630A2E247CBA00B459A0 /* OsapiensWeatherAppTests.xctest */;
@@ -168,15 +167,16 @@
 			);
 			name = OsapiensWeatherApp;
 			packageProductDependencies = (
-				A10000020000000000000002 /* WeatherServiceClient */,
-				A10000030000000000000002 /* OpenWeatherMapClient */,
-				A10000040000000000000002 /* OpenMeteoClient */,
-				A10000050000000000000002 /* LocationSearchClient */,
-				A10000060000000000000002 /* UIComponents */,
-				A10000070000000000000002 /* Features */,
 				A10000080000000000000002 /* ComposableArchitecture */,
 				4016825E2E245656009F2036 /* AppCore */,
 				401682612E24572D009F2036 /* AppCore */,
+				407EEE112E24865D0013402C /* AppCore */,
+				407EEE142E24866E0013402C /* Features */,
+				407EEE172E2486790013402C /* LocationSearchClient */,
+				407EEE1A2E2486820013402C /* OpenMeteoClient */,
+				407EEE1D2E2486910013402C /* OpenWeatherMapClient */,
+				407EEE202E24869E0013402C /* UIComponents */,
+				407EEE232E2486A90013402C /* WeatherServiceClient */,
 			);
 			productName = OsapiensWeatherApp;
 			productReference = A10000130000000000000003 /* OsapiensWeatherApp.app */;
@@ -211,14 +211,14 @@
 			);
 			mainGroup = A10000150000000000000001;
 			packageReferences = (
-				A10000260000000000000001 /* XCLocalSwiftPackageReference "WeatherServiceClient" */,
-				A10000270000000000000001 /* XCLocalSwiftPackageReference "OpenWeatherMapClient" */,
-				A10000280000000000000001 /* XCLocalSwiftPackageReference "OpenMeteoClient" */,
-				A10000290000000000000001 /* XCLocalSwiftPackageReference "LocationSearchClient" */,
-				A100002A0000000000000001 /* XCLocalSwiftPackageReference "UIComponents" */,
-				A100002B0000000000000001 /* XCLocalSwiftPackageReference "Features" */,
 				A100002C0000000000000001 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
-				401682602E24572D009F2036 /* XCLocalSwiftPackageReference "AppCore" */,
+				407EEE102E24865D0013402C /* XCLocalSwiftPackageReference "Packages/AppCore" */,
+				407EEE132E24866E0013402C /* XCLocalSwiftPackageReference "Packages/Features" */,
+				407EEE162E2486790013402C /* XCLocalSwiftPackageReference "Packages/LocationSearchClient" */,
+				407EEE192E2486820013402C /* XCLocalSwiftPackageReference "Packages/OpenMeteoClient" */,
+				407EEE1C2E2486910013402C /* XCLocalSwiftPackageReference "Packages/OpenWeatherMapClient" */,
+				407EEE1F2E24869E0013402C /* XCLocalSwiftPackageReference "Packages/UIComponents" */,
+				407EEE222E2486A90013402C /* XCLocalSwiftPackageReference "Packages/WeatherServiceClient" */,
 			);
 			productRefGroup = A10000170000000000000001 /* Products */;
 			projectDirPath = "";
@@ -529,33 +529,33 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		401682602E24572D009F2036 /* XCLocalSwiftPackageReference "AppCore" */ = {
+		407EEE102E24865D0013402C /* XCLocalSwiftPackageReference "Packages/AppCore" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = AppCore;
+			relativePath = Packages/AppCore;
 		};
-		A10000260000000000000001 /* XCLocalSwiftPackageReference "WeatherServiceClient" */ = {
+		407EEE132E24866E0013402C /* XCLocalSwiftPackageReference "Packages/Features" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = WeatherServiceClient;
+			relativePath = Packages/Features;
 		};
-		A10000270000000000000001 /* XCLocalSwiftPackageReference "OpenWeatherMapClient" */ = {
+		407EEE162E2486790013402C /* XCLocalSwiftPackageReference "Packages/LocationSearchClient" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = OpenWeatherMapClient;
+			relativePath = Packages/LocationSearchClient;
 		};
-		A10000280000000000000001 /* XCLocalSwiftPackageReference "OpenMeteoClient" */ = {
+		407EEE192E2486820013402C /* XCLocalSwiftPackageReference "Packages/OpenMeteoClient" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = OpenMeteoClient;
+			relativePath = Packages/OpenMeteoClient;
 		};
-		A10000290000000000000001 /* XCLocalSwiftPackageReference "LocationSearchClient" */ = {
+		407EEE1C2E2486910013402C /* XCLocalSwiftPackageReference "Packages/OpenWeatherMapClient" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = LocationSearchClient;
+			relativePath = Packages/OpenWeatherMapClient;
 		};
-		A100002A0000000000000001 /* XCLocalSwiftPackageReference "UIComponents" */ = {
+		407EEE1F2E24869E0013402C /* XCLocalSwiftPackageReference "Packages/UIComponents" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = UIComponents;
+			relativePath = Packages/UIComponents;
 		};
-		A100002B0000000000000001 /* XCLocalSwiftPackageReference "Features" */ = {
+		407EEE222E2486A90013402C /* XCLocalSwiftPackageReference "Packages/WeatherServiceClient" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = Features;
+			relativePath = Packages/WeatherServiceClient;
 		};
 /* End XCLocalSwiftPackageReference section */
 
@@ -579,35 +579,33 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = AppCore;
 		};
-		A10000020000000000000002 /* WeatherServiceClient */ = {
+		407EEE112E24865D0013402C /* AppCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A10000260000000000000001 /* XCLocalSwiftPackageReference "WeatherServiceClient" */;
-			productName = WeatherServiceClient;
+			productName = AppCore;
 		};
-		A10000030000000000000002 /* OpenWeatherMapClient */ = {
+		407EEE142E24866E0013402C /* Features */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A10000270000000000000001 /* XCLocalSwiftPackageReference "OpenWeatherMapClient" */;
-			productName = OpenWeatherMapClient;
+			productName = Features;
 		};
-		A10000040000000000000002 /* OpenMeteoClient */ = {
+		407EEE172E2486790013402C /* LocationSearchClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A10000280000000000000001 /* XCLocalSwiftPackageReference "OpenMeteoClient" */;
-			productName = OpenMeteoClient;
-		};
-		A10000050000000000000002 /* LocationSearchClient */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A10000290000000000000001 /* XCLocalSwiftPackageReference "LocationSearchClient" */;
 			productName = LocationSearchClient;
 		};
-		A10000060000000000000002 /* UIComponents */ = {
+		407EEE1A2E2486820013402C /* OpenMeteoClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A100002A0000000000000001 /* XCLocalSwiftPackageReference "UIComponents" */;
+			productName = OpenMeteoClient;
+		};
+		407EEE1D2E2486910013402C /* OpenWeatherMapClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenWeatherMapClient;
+		};
+		407EEE202E24869E0013402C /* UIComponents */ = {
+			isa = XCSwiftPackageProductDependency;
 			productName = UIComponents;
 		};
-		A10000070000000000000002 /* Features */ = {
+		407EEE232E2486A90013402C /* WeatherServiceClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A100002B0000000000000001 /* XCLocalSwiftPackageReference "Features" */;
-			productName = Features;
+			productName = WeatherServiceClient;
 		};
 		A10000080000000000000002 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
