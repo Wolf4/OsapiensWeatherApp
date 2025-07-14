@@ -99,3 +99,5 @@ Config.xcconfig
 .env.development
 .env.test
 .env.production 
+# macOS system files
+.DS_Store
