@@ -17,4 +17,4 @@ struct WeatherApp: App {
             AppView(store: store)
         }
     }
-} 
+}
