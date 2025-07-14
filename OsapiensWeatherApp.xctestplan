@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "5A56E778-3E70-4A0F-8E78-062FF570387F",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:OsapiensWeatherApp.xcodeproj",
+      "identifier" : "A10000190000000000000001",
+      "name" : "OsapiensWeatherApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:OsapiensWeatherApp.xcodeproj",
+        "identifier" : "406463092E247CBA00B459A0",
+        "name" : "OsapiensWeatherAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}
